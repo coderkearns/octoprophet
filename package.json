@@ -1,6 +1,6 @@
 {
   "name": "octoprophet",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A discord bot, written in Javascript with discord.js, that accesses Magic the Gathering cards. It uses api.scryfall.com as it's backend card finder.",
   "main": "index.js",
   "scripts": {
@@ -13,6 +13,7 @@
     "needle": "^2.8.0"
   },
   "devDependencies": {
-    "dotenv": "^10.0.0"
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1"
   }
 }
