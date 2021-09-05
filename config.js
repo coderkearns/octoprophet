@@ -6,7 +6,15 @@ module.exports = {
   cardRegExp: /\[\[(.+?)\]\]/gs,
 
   imageSize: "large", // "small", "normal", "large", "png", "art_crop", or "border_crop"
-  embedColor: "#A0DFF7",
+  embedColors: {
+    default: "#A0DFF7",
+    W: "#f8e7b9",
+    U: "#b3ceea",
+    B: "#696665",
+    R: "#eba082",
+    G: "#c4d3ca",
+    [undefined]: "#d4d4d4"
+  },
 
   expireImage: false,
   imageExpirationTime: 1000 * 60 * 5, // (1s * 60 = 1m) * 5 = 5 mins

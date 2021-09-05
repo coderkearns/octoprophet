@@ -52,7 +52,7 @@ async function textOnlyApi(card, message) {
 
 function createEmbedFromRes(res) {
   const e = new discord.MessageEmbed()
-  e.setColor(config.embedColor)
+  e.setColor(config.embedColors[res.color_identity[0]] || config.embedColors.default)
   e.setAuthor(res.mana_cost)
     .setTitle(`**${res.name}**`)
     .setDescription(`*${res.type_line}*\n${res.oracle_text}`)
